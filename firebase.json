@@ -6,10 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
+    "headers": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "headers": [
+          {
+            "key": "X-Frame-Options",
+            "value": "ALLOW-FROM https://www.facebook.com/"
+          }
+        ]
       }
     ]
   }
