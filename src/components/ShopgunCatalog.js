@@ -69,7 +69,7 @@ class ShopgunCatalog extends React.Component {
     handleCatalog(catalog) {
         console.log(catalog);
         this.setState({catalog});
-        document.title = catalog.label;
+        document.title = catalog.label || catalog.branding.name || 'Tilbud på Messenger';
         this.fetchAllOffers(catalog);
     }
 
