@@ -99,7 +99,7 @@ class ShopgunCatalog extends React.Component {
                            id="filter-offer-text"
                            placeholder="Filter"
                            onChange={this.onFilterTextChange}
-                           style={{width: '100vw'}}/>
+                           style={{width: '100vw', textAlign: 'center', fontSize: '1.5em', height: '1.5em'}}/>
                 </div>
                 <div>
                     {
